@@ -15,13 +15,28 @@
                     <view key="view" contentMode="scaleToFill" id="0fg-E8-nXB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGI-j8-pgx">
+                                <rect key="frame" x="132" y="430" width="150.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Fvv-ig-wro"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jGI-j8-pgx" firstAttribute="centerY" secondItem="0fg-E8-nXB" secondAttribute="centerY" id="5sO-aY-l2g"/>
+                            <constraint firstItem="jGI-j8-pgx" firstAttribute="centerX" secondItem="0fg-E8-nXB" secondAttribute="centerX" id="XOK-RX-XF5"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="connectionLbl" destination="jGI-j8-pgx" id="Qa3-Oj-Bgg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vKp-8p-IzX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="642" y="92"/>
+            <point key="canvasLocation" x="640.57971014492762" y="91.741071428571431"/>
         </scene>
     </scenes>
     <resources>

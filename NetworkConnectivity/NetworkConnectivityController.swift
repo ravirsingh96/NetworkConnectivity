@@ -10,6 +10,7 @@ import Network
 
 class NetworkConnectivityController: UIViewController {
 
+    @IBOutlet weak var connectionLbl: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         networkMonitor()
@@ -28,7 +29,7 @@ class NetworkConnectivityController: UIViewController {
             if path.status == .satisfied {
               
                 DispatchQueue.main.async {
-                   
+                    self.connectionLbl.text = "Connected"
                  self.view.backgroundColor = .green
                    
                    
@@ -39,7 +40,7 @@ class NetworkConnectivityController: UIViewController {
                
                
                 DispatchQueue.main.async {
-                    
+                    self.connectionLbl.text = "Not Connected"
                     self.view.backgroundColor = .red
                     
                 }
